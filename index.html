@@ -14,106 +14,75 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background: #080b16;
-  color: white;
-  text-align: center;
+background: #101020;
+color: white;
+font-family: Arial, sans-serif;
+min-height: 100vh;
 }
 
 header {
-  background: #111a30;
-  padding: 22px;
-  border-bottom: 2px solid #00eaff;
+  background: #202040;
+  padding: 25px;
+  text-align: center;
 }
 
 header h1 {
-  color: #00eaff;
-  font-size: 28px;
+  color: #00ffcc;
+  font-size: 30px;
 }
 
 nav {
-  margin-top: 15px;
+  background: #303050;
+  padding: 15px;
+  text-align: center;
 }
 
 nav a {
   color: white;
   text-decoration: none;
   margin: 10px;
-  font-weight: bold;
 }
 
 .hero {
-  padding: 65px 15px;
-  background: linear-gradient(135deg, #101b3c, #080b16);
+  text-align: center;
+  padding: 60px 20px;
 }
 
 .hero h2 {
-  font-size: 34px;
-  color: #00eaff;
-  margin-bottom: 18px;
+  color: #00ffcc;
+  font-size: 28px;
 }
 
 .hero p {
-  color: #ddd;
+  margin: 20px;
   font-size: 16px;
-  margin-bottom: 25px;
 }
 
 button {
-  padding: 14px 28px;
-  background: #00eaff;
-  color: #080b16;
+  background: #00cc99;
+  color: black;
   border: none;
-  border-radius: 10px;
-  font-weight: bold;
+  padding: 14px 25px;
+  border-radius: 8px;
   font-size: 16px;
-  cursor: pointer;
-}
-
-section {
-  padding: 40px 15px;
-}
-
-h2 {
-  color: #00eaff;
-  margin-bottom: 25px;
 }
 
 .games {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 18px;
+  text-align: center;
+  padding: 25px;
 }
 
 .game {
-  background: #111a30;
-  border: 1px solid #00eaff;
-  border-radius: 15px;
-  padding: 25px 15px;
-  width: 280px;
-}
-
-.game h3 {
-  color: #00eaff;
-  margin-bottom: 12px;
-}
-
-.game p {
-  color: #ccc;
-  margin-bottom: 18px;
-}
-
-.about {
-  background: #111a30;
-  line-height: 1.8;
+  background: #252545;
+  padding: 25px;
+  margin: 15px;
+  border-radius: 12px;
 }
 
 footer {
-  background: #050812;
-  padding: 22px;
-  color: #aaa;
-  border-top: 1px solid #00eaff;
+  background: #202040;
+  text-align: center;
+  padding: 20px;
 }
 </style>
 </head>
@@ -121,64 +90,48 @@ footer {
 <body>
 
 <header>
-  <h1>🎮 SAQIB GAMING</h1>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#games">Games</a>
-    <a href="#about">About</a>
-  </nav>
+  <h1>SAQUIB GAMING</h1>
+  <p>Welcome to My Gaming World</p>
 </header>
 
-<div class="hero" id="home">
-  <h2>WELCOME TO MY GAMING WORLD</h2>
-  <p>Play Games, Have Fun and Enjoy Gaming!</p>
-  <a href="#games">
-    <button>EXPLORE GAMES</button>
-  </a>
-</div>
+<nav>
+  <a href="#">Home</a>
+  <a href="#games">Games</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-<section id="games">
-  <h2>🔥 MY FAVOURITE GAMES</h2>
+<section class="hero">
+  <h2>Welcome Gamers!</h2>
+  <p>Play Games, Have Fun and Enjoy!</p>
+  <button onclick="alert('Welcome to Saquib Gaming!')">
+    Start Gaming
+  </button>
+</section>
 
-  <div class="games">
+<section class="games" id="games">
+  <h2>My Favourite Games</h2>
 
-    <div class="game">
-      <h3>🎯 Free Fire</h3>
-      <p>Welcome to the Battle Arena!</p>
-      <button onclick="alert('Free Fire - Coming Soon!')">
-        PLAY NOW
-      </button>
-    </div>
+  <div class="game">
+    <h3>Free Fire</h3>
+    <p>Battle and Survive!</p>
+  </div>
 
-    <div class="game">
-      <h3>🚗 GTA V</h3>
-      <p>Explore the world of adventure!</p>
-      <button onclick="alert('GTA V - Coming Soon!')">
-        PLAY NOW
-      </button>
-    </div>
+  <div class="game">
+    <h3>Minecraft</h3>
+    <p>Build Your World!</p>
+  </div>
 
-    <div class="game">
-      <h3>⛏️ Minecraft</h3>
-      <p>Build your own gaming world!</p>
-      <button onclick="alert('Minecraft - Coming Soon!')">
-        PLAY NOW
-      </button>
-    </div>
-
+  <div class="game">
+    <h3>BGMI</h3>
+    <p>Let's Battle!</p>
   </div>
 </section>
 
-<section class="about" id="about">
-  <h2>ABOUT ME</h2>
-  <p>Welcome to SAQIB GAMING!</p>
-  <p>This is my personal gaming website.</p>
-  <p>Thank you for visiting my website ❤️</p>
-</section>
-
-<footer>
-  <p>© 2026 SAQIB GAMING. All Rights Reserved.</p>
+<footer id="contact">
+  <p>© 2026 Saquib Gaming</p>
+  <p>Thanks for Visiting!</p>
 </footer>
 
 </body>
 </html>
+
